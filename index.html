@@ -9,7 +9,7 @@
     <style>
         .painel{
         margin: auto;
-        background-color: rgb(139, 139, 141);
+        background-color: rgb(33, 35, 39);
         width: 650px;
         height: 650px;
         border-radius: 20px;
@@ -17,11 +17,43 @@
         padding-top: 50px;
         font-family:'Times New Roman', Times, serif;
     }
+    #cliqueaqui{
+        height: 60px;
+            width: 100px;
+            background-color: rgb(65, 75, 97);
+            border: 2px solid rgb(27, 27, 32);
+            border-radius: 10px;
+            color: rgb(194, 189, 216);
+            margin-left: -50px;
+            font-family: 'Times New Roman', Times, serif;
+    }
+    #sim{
+            height: 40px;
+            width: 60px;
+            background-color: rgb(65, 75, 97);
+            border: 2px solid rgb(27, 27, 32);
+            border-radius: 10px;
+            color: rgb(194, 189, 216);
+            margin-left: -50px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #nao{
+            position: absolute;
+            height: 40px;
+            width: 60px;
+            background-color: rgb(65, 75, 97);
+            border: 2px solid rgb(27, 27, 32);
+            border-radius: 10px;
+            color: rgb(194, 189, 216);
+            margin-left: 10px;
+            font-family: 'Times New Roman', Times, serif;s
+        }
+
     </style>
 </head> 
 <body>
     <center>
-        <button onclick="document.getElementById('bg-music').play()"> Clique aqui :O
+        <button onclick="document.getElementById('bg-music').play()" id="cliqueaqui"> Clique aqui :O
         </button>
     </center>
     <audio id="bg-music" loop>
@@ -72,17 +104,82 @@
                <br> </br> <br> </br>
                Com todo carinho,   <br> </br> <br> </br>
                         Allan.
+                        <br> </br> <br> </br> <br> </br> <br> </br>
+                    </p>
                 <div class="painel"> 
                     <center>
                         <img src="img/image copy 3.png" height="450px" width="500px">
                     </center>
-                    <h2>Eu ainda tenho algumas fotos de alguns momentos nossos que </h2>
+                    <h2>Eu ainda tenho algumas fotos de momentos nossos, <br></br> que quero te mostrar</h2>
 
                 </div>
-            
-          
+                <br> </br> <br> </br> <br> </br> <br> </br>
+              <center>
+                <h2> esse foi quando você me desenhou na aula, amo tanto</h2>
+                    <img src="img/image copy 6.png" height="400px" width="400px">
+              </center>
+              <br> </br> <br> </br> <br> </br> <br> </br>
+              <center>
+                <h2> A primeira vez que você pintou um quadro (com uma camêra de qualidade duvidosaKKKK) </h2>
+                    <img src="img/image copy 7.png" alt="" height="400px" width="400px">
+              </center>
+              <br> </br> <br> </br> <br> </br> <br> </br>
+              <center>
+                <h2> O presente a mão que você me fez :( </h2>
+                <img src="img/image copy 8.png" alt="" height="700px" width="500px">
+              </center>
+              <br> </br> <br> </br> <br> </br> <br> </br>
+              <center>
+                <h2> Outro desenho fofo </h2>
+                <img src="img/image copy 5.png" alt="" height="500px" width="500px">
+              </center>
+              <br> </br> <br> </br> <br> </br> <br> </br>
+              <center>
+                <h2> A gente jogando juntinho af </h2>
+                <img src="img/image copy 4.png" alt="" height="400px" width="800px">
+              </center>
+              <br> </br> <br> </br> <br> </br> <br> </br>
+              <center>
+                <h2> O dia que você me deu a skin do pyke (eu morri quase de tão feliz que você me deixou</h2>
+                <img src="img/image copy 2.png" alt="" height="400px" width="800px">
+              </center>
+              <br> </br> <br> </br> <br> </br> <br> </br>
 
-    </p>
+              <div class="painel">
+                <h1> E para finalizar, você deseja continuar?</h1>
+        
+                <img src="img/image.png" alt="" height="400px" width="550px">
+        
+                <h2> É algo simples, mas espero que goste! 
+                </h2>
+                
+        
+                <a href="https://open.spotify.com/playlist/3XT7tQXNMWnnxxEMYUuN0P?si=vhOyrIb6QQmGmxAE5mrWXg"><button id="sim" > Sim! :3 </button></a>
+                <button onmouseover="fuja()" id="nao"> Não! :/ </button>
+                
+            </div>
+        
+            <script>
+                function fuja(){
+                    var botaoNao = document.getElementById("nao")
+        
+                    var larguraJanela = window.innerWidth;
+                    var alturaJanela = window.innerHeight;
+        
+                    var maxX = larguraJanela - botaoNao.offsetWidth;
+                    var maxY = alturaJanela - botaoNao.offsetHeight;
+        
+                    var aleatorioX = Math.floor(Math.random() * maxX);
+                    var aleatorioY = Math.floor(Math.random() * maxY);
+        
+                    botaoNao.style.left = aleatorioX + "px";
+                    botaoNao.style.top = aleatorioY + "px";
+        
+        
+                }
+            </script>
+    
+
 </body>
 
 </html>
